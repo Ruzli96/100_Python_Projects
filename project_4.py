@@ -27,45 +27,32 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
-me = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
-if me == '0':
-  print(rock)
-elif me == '1':
-  print(paper)
-elif me == '2':
-  print(scissors)
+options = [rock, paper, scissors]
 
-computer = str(random.randint(0, 2))
-
-if me == computer:
-  print("Computer Chose:\n")
-  if computer == '0':
-    print(rock)
-  elif computer == '1':
-    print(paper)
-  elif computer == '2':
-    print(scissors)
-  print("Game Tied!")
-elif int(me) > 2 or int(me) < 0:
-  print("This is an invalid number!")
+me = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+if me > 2:
+  print("Invalid option has been selected!")
 else:
-  print("Computer Chose:\n")
-  if me == '0' and computer == '1':
-    print(paper)
-    print("You Lost!")
-  elif me == '0' and computer == '2':
-    print(scissors)
-    print("You Won!")
-  elif me == '1' and computer == '0':
-    print(rock)
-    print("You Won!")
-  elif me == '1' and computer == '2':
-    print(scissors)
-    print("You Lost!")
-  elif me == '2' and computer == '0':
-    print(rock)
-    print("You Lost!")
-  elif me == '2' and computer == '1':
-    print(paper)
-    print("You Won!")
-
+  print(options[me])
+  computer = random.randint(0, 2)
+  if options[me] == options[computer]:
+    print("Computer Chose:\n")
+    print(options[computer])
+    print("Game Tied!")
+  else:
+    win_statement = "You Won!"
+    lose_statement = "You Lost!"
+    print("Computer Chose:\n")
+    print(options[computer])
+    if me == 0 and computer == 1:
+      print(lose_statement)
+    elif me == 0 and computer == 2:
+      print(win_statement)
+    elif me == 1 and computer == 0:
+      print(win_statement)
+    elif me == 1 and computer == 2:
+      print(lose_statement)
+    elif me == 2 and computer == 0:
+      print(lose_statement)
+    elif me == 2 and computer == 1:
+      print(win_statement)
