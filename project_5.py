@@ -28,4 +28,4 @@ for count in range(nr_numbers):
 	myList.append(char)
 
 random.shuffle(myList)
-print(password.join(myList))
+print(f"Your new password is {password.join(myList)}")
