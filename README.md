@@ -17,3 +17,7 @@ Treasure Island terminal game
 #### Project 4
 
 Rock, Paper, Scissors terminal game
+
+#### Project 5
+
+Password Generator 
