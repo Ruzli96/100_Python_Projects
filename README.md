@@ -31,3 +31,7 @@ Robot Maze
 >> - Download the 3 json files from the *Reeborg World Tests*
 >> - Navigate to [Reeborg's World](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=problem_world3.json&url=user_world%3Aproblem_world3.json) and click on **Additional Options**
 >> - Click on **Open world from file** and close the dialog box and apply code
+
+#### Project 7
+
+Hangman 
